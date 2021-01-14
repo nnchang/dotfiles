@@ -635,11 +635,7 @@ devReset() {
   dev up
 }
 
-eval "$(slslog _completion --prog slslog)"
-
-export GOPATH="/Volumes/git/go"
-source ~/Developer/go/skylab.zshrc.sh
-source ~/Developer/go/go.zshrc.sh
+command -v slslog && eval "$(slslog _completion --prog slslog)"
 
 export GITHUB_TOKEN='4f47c70e14baf432ae5703ce0078503af6d84e7c'
 
