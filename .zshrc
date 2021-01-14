@@ -604,7 +604,7 @@ umask 022
 # Customization by James Nam
 # Git prompt (https://github.com/olivierverdier/zsh-git-prompt)
 ################################################################################
-source ~/Developer/zsh-git-prompt/zshrc.sh
+source ~/.dotfiles/zsh-git-prompt/zshrc.sh
 PROMPT='%{$fg[yellow]%}%* %{$fg[red]%}%~%{$reset_color%}$(git_super_status) %# '
 GIT_PROMPT_EXECUTABLE="haskell"
 
@@ -635,7 +635,7 @@ devReset() {
   dev up
 }
 
-command -v slslog && eval "$(slslog _completion --prog slslog)"
+command -v slslog > /dev/null && eval "$(slslog _completion --prog slslog)"
 
 export GITHUB_TOKEN='4f47c70e14baf432ae5703ce0078503af6d84e7c'
 
