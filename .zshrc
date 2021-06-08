@@ -653,7 +653,6 @@ alias scpcrash="scp -o ProxyCommand='nc -x localhost:9099 %h %p' "
 alias scpkeps="scp -o ProxyCommand='nc -x localhost:9101 %h %p' "
 alias sftpcrash="sftp -o ProxyCommand='nc -x localhost:9099 %h %p' "
 
-ulimit -n 1000
 devReset() {
   dev stop
   dev rm -fv
