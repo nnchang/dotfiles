@@ -606,7 +606,7 @@ umask 022
 ################################################################################
 source ~/.dotfiles/zsh-git-prompt/zshrc.sh
 PROMPT='%{$fg[yellow]%}%* %{$fg[red]%}%~%{$reset_color%}$(git_super_status) %# '
-GIT_PROMPT_EXECUTABLE="haskell"
+# GIT_PROMPT_EXECUTABLE="haskell"
 
 ################################################################################
 # jenv setup (generated)
