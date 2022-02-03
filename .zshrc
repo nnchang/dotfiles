@@ -676,3 +676,4 @@ git_prune () {
 	git fetch --prune --all
 	git branch -vv | grep --color=auto --exclude-dir={.bzr,CVS,.git,.hg,.svn} ": gone" | awk '{print $1}' | xargs git branch -D
 }
+export PATH="/usr/local/opt/openjdk/bin:$PATH"
